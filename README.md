@@ -22,6 +22,21 @@ templates/
   prompt-template.md   the front-matter + section format every prompt uses
 ```
 
+## Current prompts
+
+| Prompt | Stage | What it does |
+|---|---|---|
+| [question-to-decision](prompts/framing/question-to-decision.md) | framing | Turns a vague ask into the decision it serves, with a stopping rule |
+| [primary-source-ladder](prompts/sourcing/primary-source-ladder.md) | sourcing | Forces primary records before press, and reports what it could not find |
+| [review-corpus-to-claims](prompts/extraction/review-corpus-to-claims.md) | extraction | Reviews into counted, dated, actionable claims, with noise flagged |
+| [competitor-teardown](prompts/analysis/competitor-teardown.md) | analysis | Reads a competitor from observable evidence, structural moat vs polish |
+| [steelman-then-break](prompts/verification/steelman-then-break.md) | verification | Argues your side well, then attacks it, and can return "holds" |
+| [decision-memo](prompts/synthesis/decision-memo.md) | synthesis | One screen, uncertainty left visible |
+
+They chain: framing feeds sourcing, sourcing and extraction feed analysis,
+analysis goes through verification before it reaches synthesis. Each prompt's
+notes say which one it hands off to.
+
 ## Conventions
 
 - One prompt per file. Filename is kebab-case and describes the job:
