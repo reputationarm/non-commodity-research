@@ -1,0 +1,6 @@
+.DS_Store
+*.swp
+.env
+.env.*
+scratch/
+drafts/
