@@ -20,6 +20,9 @@ prompts/
   verification/   fact-checking, steelmanning, red-teaming a conclusion
 templates/
   prompt-template.md   the front-matter + section format every prompt uses
+workflows/
+  non-commodity-content-agency-system.md
+                       end-to-end agency workflow, master prompt, and worksheets
 ```
 
 ## Current prompts
@@ -32,6 +35,17 @@ templates/
 | [competitor-teardown](prompts/analysis/competitor-teardown.md) | analysis | Reads a competitor from observable evidence, structural moat vs polish |
 | [steelman-then-break](prompts/verification/steelman-then-break.md) | verification | Argues your side well, then attacks it, and can return "holds" |
 | [decision-memo](prompts/synthesis/decision-memo.md) | synthesis | One screen, uncertainty left visible |
+
+## Complete workflows
+
+| Workflow | What it does |
+|---|---|
+| [Non-Commodity Content Research System](workflows/non-commodity-content-agency-system.md) | Gives an agency a reusable client intake, master prompt, evidence rules, branch-testing worksheet, SME interview prompt, production workflow, and definition of done for developing non-commodity content in any industry |
+
+The workflow generalizes Reputation Arm's AI-search follow-up method beyond
+local services. It works for professional services, SaaS, ecommerce, products,
+B2B, and regulated industries while keeping observations, hypotheses, client
+facts, and verified evidence separate.
 
 They chain: framing feeds sourcing, sourcing and extraction feed analysis,
 analysis goes through verification before it reaches synthesis. Each prompt's
